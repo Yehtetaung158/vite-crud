@@ -1,0 +1,20 @@
+[
+    {
+      "name": "Hlaing Hlaing",
+      "id": 1
+    },
+    {
+      "id": 3,
+      "name": "maw maw",
+      "phone": "09784224474",
+      "batch": "swd aug weekend",
+      "course": "swd"
+    },
+    {
+      "id": 4,
+      "name": "aye aye",
+      "phone": "09784224472",
+      "batch": "swd june weekday",
+      "course": "pud"
+    }
+  ]
