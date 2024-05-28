@@ -27,7 +27,7 @@ export const courseFormHandler = (even) => {
     }).then(res => res.json()).then((json) => {
         courseForm.querySelector("button").toggleAttribute("disabled");
         rwoGroup.append(rowUi(json));
-        courseForm.reset();
+        // courseForm.reset();
         toase("Course creating is successful")
     })
 }
@@ -51,10 +51,9 @@ export const rowGroupHandler = (event) => {
             if (result.isConfirmed) {
                 event.target.toggleAttribute("disabled")
                 fetch(url("/courses/" + currentRowId), { method: "DELETE" }).then(res => {
-                    if (res.status === 204) {
+                    if (res.status === 200) {
                         toase("Course is beeing deleted")
                         currentRow.remove();
-
                     }
                 })
 
@@ -168,7 +167,7 @@ export const searchInputHandler = (event) => {
            if(json.length){
                rowRender(json)            
            }else{toase("There is no course form");
-                rwoGroup.innerHTML=`<tr><td clospan='5' class="text-center px-6 py-4 text-center">There is no course <a href="http://${location.host}">Browse all</a></td></tr>`
+                rwoGroup.innerHTML=`<tr><td clospan='5' class=" px-6 py-4 text-center">There is no course <a href="http://${location.host}">Browse all</a></td></tr>`
         }
         }
         )}
