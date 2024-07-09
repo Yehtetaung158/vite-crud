@@ -6,6 +6,14 @@
       "author": "typicode"
     }
   ],
+  "courses": [
+    {
+      "title": "Special Web Design",
+      "short_name": "SWDdd",
+      "fee": "500",
+      "id": 1
+    }
+  ],
   "comments": [
     {
       "id": 1,
