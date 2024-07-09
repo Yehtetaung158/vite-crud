@@ -1,3 +1,5 @@
 {
-    "courses": []
+    "courses": [
+        { "id": 1, "title": "Hello World" }
+    ]
 }
